@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sonlar</title>
+</head>
+<body>
+
+<h1>Sonlarni ajratish</h1>
+
+<h2>Musbat sonlar</h2>
+<ul>
+{% for n in numbers %}
+    {% if n > 0 %}
+        <li>{{ n }}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+<h2>Manfiy sonlar</h2>
+<ul>
+{% for n in numbers %}
+    {% if n < 0 %}
+        <li>{{ n }}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+<h2>Nol</h2>
+<ul>
+{% for n in numbers %}
+    {% if n == 0 %}
+        <li>{{ n }}</li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+</body>
+</html>
